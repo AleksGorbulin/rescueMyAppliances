@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cdn-cgi/
+Sitemap: http://www.rescuemyappliances.com/sitemap.xml

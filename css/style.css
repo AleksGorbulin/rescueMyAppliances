@@ -1,0 +1,763 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css */
+button::-moz-focus-inner{padding:0;border:0;}
+/*! CSS Used from: http://localhost:8888/RescueMyAppliances/startbootstrap-creative-gh-pages%202/css/styles.css */
+:root{--cover-color:rgba(26,32,42,.88);--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#f4623a;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#f4623a;--primary-hover:#f24516;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-family-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;}
+html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+footer,header,nav,section{display:block;}
+body{margin:0;font-family:"Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff;}
+hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible;}
+h1,h2,h3,h4{margin-top:0;margin-bottom:0.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+ul{margin-top:0;margin-bottom:1rem;}
+a{color:#f4623a;text-decoration:none;background-color:transparent;}
+a:hover{color:#d6370c;text-decoration:underline;}
+img{vertical-align:middle;border-style:none;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+input,button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button,input{overflow:visible;}
+button{text-transform:none;}
+button,[type=button],[type=submit]{-webkit-appearance:button;}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner{padding:0;border-style:none;}
+h1,h2,h3,h4,.h4{margin-bottom:0.5rem;font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:500;line-height:1.2;}
+h1{font-size:2.5rem;}
+h2{font-size:2rem;}
+h3{font-size:1.75rem;}
+h4,.h4{font-size:1.5rem;}
+hr{margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0, 0, 0, 0.1);}
+.small{font-size:80%;font-weight:400;}
+.img-fluid{max-width:100%;height:auto;}
+.container,.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+.testimonial-image {
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+  
+  .pxy-2 {
+    padding: 1.25rem;
+  }
+  
+  .u-icon-circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .u-icon-circle svg {
+    width: 30px;
+    height: 30px;
+  }
+@media (min-width: 576px){
+.container{max-width:540px;}
+/* testimotial styles originally min-width: 488px*/
+.testimonial-image {
+    width: 395px;
+    height: 395px;
+  }
+}
+@media (min-width: 768px){
+.container{max-width:720px;}
+.testimonial-image {
+    width: 100%;
+    height: 360px;
+  }
+}
+@media (min-width: 992px){
+.container{max-width:960px;}
+/* testimonial styles original min-width: 960px */
+.testimonial-image {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (min-width: 1200px){
+.container{max-width:1140px;}
+}
+.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.no-gutters{margin-right:0;margin-left:0;}
+.no-gutters > [class*=col-]{padding-right:0;padding-left:0;}
+.col-lg-10,.col-lg-7,.col-lg-6,.col-lg-5,.col-lg-4,.col-md-6,.col-md-3,.col-sm-6{position:relative;width:100%;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+@media (min-width: 768px){
+.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}
+.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+@media (min-width: 992px){
+.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 33.3333333333%;flex:0 0 33.3333333333%;max-width:33.3333333333%;}
+.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 41.6666666667%;flex:0 0 41.6666666667%;max-width:41.6666666667%;}
+.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+.col-lg-7{-webkit-box-flex:0;-ms-flex:0 0 58.3333333333%;flex:0 0 58.3333333333%;max-width:58.3333333333%;}
+.col-lg-10{-webkit-box-flex:0;-ms-flex:0 0 83.3333333333%;flex:0 0 83.3333333333%;max-width:83.3333333333%;}
+}
+@media (max-width: 575.98px){
+.col-xs-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+.form-control{display:block;width:100%;height:calc(1.5em + 0.75rem + 2px);padding:0.375rem 0.75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:0.25rem;-webkit-transition:border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;transition:border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;-o-transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;}
+@media (prefers-reduced-motion: reduce){
+.form-control{-webkit-transition:none;-o-transition:none;transition:none;}
+}
+.form-control::-ms-expand{background-color:transparent;border:0;}
+.form-control:-moz-focusring{color:transparent;text-shadow:0 0 0 #495057;}
+.form-control:focus{color:#495057;background-color:#fff;border-color:#fbc2b3;outline:0;-webkit-box-shadow:0 0 0 0.2rem rgba(244, 98, 58, 0.25);box-shadow:0 0 0 0.2rem rgba(244, 98, 58, 0.25);}
+.form-control::-moz-placeholder{color:#6c757d;opacity:1;}
+.form-control:-ms-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::-ms-input-placeholder{color:#6c757d;opacity:1;}
+.form-control::placeholder{color:#6c757d;opacity:1;}
+.form-control:disabled{background-color:#e9ecef;opacity:1;}
+.form-control-lg{height:calc(1.5em + 1rem + 2px);padding:0.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:0.3rem;}
+.form-group{margin-bottom:1rem;}
+.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:0.375rem 0.75rem;font-size:1rem;line-height:1.5;border-radius:0.25rem;-webkit-transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;-o-transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;}
+@media (prefers-reduced-motion: reduce){
+.btn{-webkit-transition:none;-o-transition:none;transition:none;}
+}
+.btn:hover{color:#212529;text-decoration:none;}
+.btn:focus{outline:0;-webkit-box-shadow:0 0 0 0.2rem rgba(244, 98, 58, 0.25);box-shadow:0 0 0 0.2rem rgba(244, 98, 58, 0.25);}
+.btn:disabled{opacity:0.65;}
+.btn-primary{color:#fff;background-color:var(--primary);border-color:var(--primary);}
+.btn-primary:hover{color:#fff;background-color:var(--primary-hover);border-color:#ee3e0d;}
+.btn-primary:focus{color:#fff;background-color:var(--primary-hover);border-color:#ee3e0d;-webkit-box-shadow:0 0 0 0.2rem rgba(246, 122, 88, 0.5);box-shadow:0 0 0 0.2rem rgba(246, 122, 88, 0.5);}
+.btn-primary:disabled{color:#fff;background-color:#f4623a;border-color:#f4623a;}
+.collapse:not(.show){display:none;}
+.nav-link{display:block;padding:0.5rem 1rem;}
+.nav-link:hover,.nav-link:focus{text-decoration:none;}
+.navbar{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:0.5rem 1rem;}
+.navbar .container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;}
+.navbar-brand{display:inline-block;padding-top:0.3125rem;padding-bottom:0.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap;}
+.navbar-brand:hover,.navbar-brand:focus{text-decoration:none;}
+.navbar-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none;}
+.navbar-nav .nav-link{padding-right:0;padding-left:0;}
+.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.navbar-toggler{padding:0.25rem 0.75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:0.25rem;}
+.navbar-toggler:hover,.navbar-toggler:focus{text-decoration:none;}
+.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%;}
+@media (max-width: 991.98px){
+.navbar-expand-lg > .container{padding-right:0;padding-left:0;}
+}
+@media (min-width: 992px){
+.navbar-expand-lg{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;}
+.navbar-expand-lg .navbar-nav{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;}
+.navbar-expand-lg .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem;}
+.navbar-expand-lg > .container{-ms-flex-wrap:nowrap;flex-wrap:nowrap;}
+.navbar-expand-lg .navbar-collapse{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto;}
+.navbar-expand-lg .navbar-toggler{display:none;}
+}
+.navbar-light .navbar-brand{color:rgba(0, 0, 0, 0.9);}
+.navbar-light .navbar-brand:hover,.navbar-light .navbar-brand:focus{color:rgba(0, 0, 0, 0.9);}
+.navbar-light .navbar-nav .nav-link{color:rgba(0, 0, 0, 0.5);}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus{color:rgba(0, 0, 0, 0.7);}
+.navbar-light .navbar-toggler{color:rgba(0, 0, 0, 0.5);border-color:rgba(0, 0, 0, 0.1);}
+.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+.bg-light{background-color:#f8f9fa!important;}
+.bg-dark{background-color:var(--cover-color)!important;}
+@media (min-width: 992px){
+.d-lg-none{display:none!important;}
+}
+.justify-content-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;}
+.align-items-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;}
+.align-self-end{-ms-flex-item-align:end!important;align-self:flex-end!important;}
+.align-self-baseline{-ms-flex-item-align:baseline!important;align-self:baseline!important;}
+.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030;}
+.h-100{height:100%;}
+.mt-0{margin-top:0!important;}
+.mb-0{margin-bottom:0!important;}
+.my-2{margin-top:0.5rem!important;}
+.mb-2,.my-2{margin-bottom:0.5rem!important;}
+.my-4{margin-top:1.5rem!important;}
+.mb-4,.my-4{margin-bottom:1.5rem!important;}
+.mt-5{margin-top:3rem!important;}
+.mb-5{margin-bottom:3rem!important;}
+.p-0{padding:0!important;}
+.p-3{padding:1rem!important;}
+.py-3{padding-top:1rem!important;}
+.py-3{padding-bottom:1rem!important;}
+.py-5{padding-top:1rem;}
+.py-5{padding-bottom:1rem;}
+.ml-auto{margin-left:auto!important;}
+@media (min-width: 992px){
+.my-lg-0{margin-top:0!important;}
+.my-lg-0{margin-bottom:0!important;}
+}
+.text-left{text-align:left!important;}
+.text-center{text-align:center!important;}
+.text-uppercase{text-transform:uppercase!important;}
+.font-weight-light{font-weight:300!important;}
+.font-weight-bold{font-weight:700!important;}
+.text-white{color:#fff!important;}
+.text-muted{color:#6c757d!important;}
+.text-white-50{color:rgba(255, 255, 255, 0.5)!important;}
+@media print{
+*,*::before,*::after{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+p,h2,h3{orphans:3;widows:3;}
+h2,h3{page-break-after:avoid;}
+body{min-width:992px!important;}
+.container{min-width:992px!important;}
+.navbar{display:none;}
+}
+body,html{width:100%;height:100%;}
+hr.divider{max-width:3.25rem;border-width:0.2rem;border-color:var(--primary);}
+.btn{font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.page-section{padding-top:6rem;padding-bottom:2rem;font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+#mainNav{-webkit-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);background-color:#fff;-webkit-transition:background-color 0.2s ease;-o-transition:background-color 0.2s ease;transition:background-color 0.2s ease;}
+#mainNav .navbar-brand{font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:700;color:#212529;}
+#mainNav .navbar-nav .nav-item .nav-link{color:#6c757d;font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-weight:700;font-size:0.9rem;padding:0.75rem 0;}
+#mainNav .navbar-nav .nav-item .nav-link:hover,#mainNav .navbar-nav .nav-item .nav-link:active{color:#f4623a;}
+@media (min-width: 992px){
+    #mainNav{-webkit-box-shadow:none;box-shadow:none;background-color:transparent;}
+    #mainNav .navbar-brand{color:rgba(255, 255, 255, 0.7);}
+    #mainNav .navbar-brand:hover{color:#fff;}
+    #mainNav .navbar-nav .nav-item .nav-link{color:rgba(255, 255, 255, 0.7);padding:0 1rem;}
+    #mainNav .navbar-nav .nav-item .nav-link:hover{color:#fff;}
+    #mainNav .navbar-nav .nav-item:last-child .nav-link{padding-right:0;}
+    #mainNav.navbar-scrolled{-webkit-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);background-color:#fff;}
+    #mainNav.navbar-scrolled .navbar-brand{color:#212529;}
+    #mainNav.navbar-scrolled .navbar-brand:hover{color:#f4623a;}
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link{color:#212529;}
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover{color:#f4623a;}
+
+    }
+
+    header.masthead{padding-top:10rem;padding-bottom:calc(10rem - 4.5rem);
+        background:-o-linear-gradient(top, var(--cover-color) 0%, var(--cover-color) 100%), url("https:///assets/img/bg-masthead-min.jpg");
+        background:-o-linear-gradient(top, var(--cover-color) 0%, var(--cover-color) 100%), url("../assets/img/bg-masthead-min.jpg");
+        background:-webkit-gradient(linear, left top, left bottom, from(var(--cover-color)), to(var(--cover-color))), url("../assets/img/bg-masthead-min.jpg");
+        background:linear-gradient(to bottom, var(--cover-color) 0%, var(--cover-color) 100%), url("../assets/img/bg-masthead-min.jpg");
+        background: -webkit-gradient(linear, left bottom, left top, from(var(--cover-color)), to(var(--cover-color))), url("../assets/img/bg-masthead-min.webp");
+        background: -o-linear-gradient(bottom, var(--cover-color) 0%, var(--cover-color) 100%), url("../assets/img/bg-masthead-min.webp");
+        background: linear-gradient(to top, var(--cover-color) 0%, var(--cover-color) 100%), url("../assets/img/bg-masthead-min.webp"); /* For browsers that support WebP */
+        background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover;}
+header.masthead h1{font-size:2.25rem;}
+@media (min-width: 992px){
+header.masthead{height:100vh;min-height:40rem;padding-top:4.5rem;padding-bottom:0;}
+header.masthead p{font-size:1.15rem;}
+header.masthead h1{font-size:3rem;}
+}
+@media (min-width: 1200px){
+header.masthead h1{font-size:3.5rem;}
+}
+#portfolio .container-fluid{max-width:1920px;margin-top:6rem;}
+#portfolio .container-fluid .portfolio-box{position:relative;display:block;}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:100%;height:100%;position:absolute;bottom:0;text-align:center;opacity:0;color:#fff;background:rgba(244, 98, 58, 0.9);-webkit-transition:opacity 0.25s ease;-o-transition:opacity 0.25s ease;transition:opacity 0.25s ease;text-align:center;}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category{font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-size:0.85rem;font-weight:600;text-transform:uppercase;}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name{font-size:1.2rem;}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption{opacity:1;}
+.text-white-75{color:rgba(255, 255, 255, 0.75);}
+form{background:rgba(255,255,255,0.3);border-radius:0.25rem;padding:1rem;}
+i.flaticon-phone:before,i.flaticon-phone:after{font-size:20px;color:white;}
+i.flaticon-maps-and-flags:before,.flaticon-email:before{font-size:20px;color:var(--cover-color);}
+.callNow{position:fixed;bottom:0;width:100%;padding:0.8rem;text-align:center;background-color:var(--primary);color:#ffffff;font-family:"Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+.callNow:hover,.callNow:focus{cursor:pointer;background-color:var(--primary-hover);}
+a.contactInfo{text-decoration:none;color:var(--cover-color);}
+a.contactInfo >i.flaticon-phone:before{color:inherit;}
+a.contactInfo:hover{cursor:pointer;color:#fff;background-color:var(--primary);border-color:var(--primary);padding:0.6rem;border-radius:0.2rem;-webkit-transition:color 0.15s ease-in-out, background-color 0.15s easy-in-out;-o-transition:color 0.15s ease-in-out, background-color 0.15s easy-in-out;transition:color 0.15s ease-in-out, background-color 0.15s easy-in-out;}
+@media (max-width: 576px){
+.h-100{height:100%!important;}
+footer{padding-bottom:4rem;}
+}
+@media ( max-width:991.98px){
+footer{padding-bottom:5rem!important;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR7lXff1jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR7lXff8jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR7lXff3jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR7lXff2jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR7lXff4jvzDP3WG.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZDf-LVrPHpBXw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZKf-LVrPHpBXw.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZBf-LVrPHpBXw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZAf-LVrPHpBXw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4m0qyriQwlOrhSvowK_l5-eRZOf-LVrPHp.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wvf1jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wvf8jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wvf3jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wvf2jvzDP3WGO5g.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:italic;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4l0qyriQwlOrhSvowK_l5-eR71Wvf4jvzDP3WG.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZVcf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZXMf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZV8f6hPvhPUWH.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZVsf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cSZMdeX3rsHo.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-eCZMdeX3rsHo.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cyZMdeX3rsHo.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-ciZMdeX3rsHo.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZVcf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZXMf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZV8f6hPvhPUWH.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZVsf6hPvhPUWH.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6hPvhPQ.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX4QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX6QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX7QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjXp8Bte.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX4QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX6QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX7QjXp8Bte9ZM.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;font-display: swap;}
+@font-face{font-family:'Merriweather Sans';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/merriweathersans/v14/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjXp8Bte.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;font-display: swap;}
+
+
+/* custome css */
+
+
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link.active{
+    color:#f4623a;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.alert {
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.fade.show {
+    opacity: 1;
+}
+.alert-dismissible {
+    padding-right: 4rem;
+}
+
+#alert{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1050;
+    width: 100%;
+}
+.copyright{
+    position: relative;
+    top:2px;
+}
+
+/* MAGNIFIC POPUP */
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: 0.8;
+}
+.mfp-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: none !important;
+    -webkit-backface-visibility: hidden;
+}
+.mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.mfp-container:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.mfp-align-top .mfp-container:before {
+    display: none;
+}
+.mfp-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045;
+}
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+    width: 100%;
+    cursor: auto;
+}
+.mfp-ajax-cur {
+    cursor: progress;
+}
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+.mfp-zoom {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+.mfp-auto-cursor .mfp-content {
+    cursor: auto;
+}
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+.mfp-loading.mfp-figure {
+    display: none;
+}
+.mfp-hide {
+    display: none !important;
+}
+.mfp-preloader {
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    text-align: center;
+    margin-top: -0.8em;
+    left: 8px;
+    right: 8px;
+    z-index: 1044;
+}
+.mfp-preloader a {
+    color: #ccc;
+}
+.mfp-preloader a:hover {
+    color: #fff;
+}
+.mfp-s-ready .mfp-preloader {
+    display: none;
+}
+.mfp-s-error .mfp-content {
+    display: none;
+}
+button.mfp-close,
+button.mfp-arrow {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: 0;
+    padding: 0;
+    z-index: 1046;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+.mfp-close {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.65;
+    padding: 0 0 18px 10px;
+    color: #fff;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+}
+.mfp-close:hover,
+.mfp-close:focus {
+    opacity: 1;
+}
+.mfp-close:active {
+    top: 1px;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #333;
+}
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    color: #fff;
+    right: -6px;
+    text-align: right;
+    padding-right: 6px;
+    width: 100%;
+}
+.mfp-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+.mfp-arrow {
+    position: absolute;
+    opacity: 0.65;
+    margin: 0;
+    top: 50%;
+    margin-top: -55px;
+    padding: 0;
+    width: 90px;
+    height: 110px;
+    -webkit-tap-highlight-color: transparent;
+}
+.mfp-arrow:active {
+    margin-top: -54px;
+}
+.mfp-arrow:hover,
+.mfp-arrow:focus {
+    opacity: 1;
+}
+.mfp-arrow:before,
+.mfp-arrow:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: medium inset transparent;
+}
+.mfp-arrow:after {
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+    top: 8px;
+}
+.mfp-arrow:before {
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+    opacity: 0.7;
+}
+.mfp-arrow-left {
+    left: 0;
+}
+.mfp-arrow-left:after {
+    border-right: 17px solid #fff;
+    margin-left: 31px;
+}
+.mfp-arrow-left:before {
+    margin-left: 25px;
+    border-right: 27px solid #3f3f3f;
+}
+.mfp-arrow-right {
+    right: 0;
+}
+.mfp-arrow-right:after {
+    border-left: 17px solid #fff;
+    margin-left: 39px;
+}
+.mfp-arrow-right:before {
+    border-left: 27px solid #3f3f3f;
+}
+.mfp-iframe-holder {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 900px;
+}
+.mfp-iframe-holder .mfp-close {
+    top: -40px;
+}
+.mfp-iframe-scaler {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.mfp-iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #000;
+}
+img.mfp-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 40px 0 40px;
+    margin: 0 auto;
+}
+.mfp-figure {
+    line-height: 0;
+}
+.mfp-figure:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #444;
+}
+.mfp-figure small {
+    color: #bdbdbd;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+}
+.mfp-figure figure {
+    margin: 0;
+}
+.mfp-bottom-bar {
+    margin-top: -36px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    cursor: auto;
+}
+.mfp-title {
+    text-align: left;
+    line-height: 18px;
+    color: #f3f3f3;
+    word-wrap: break-word;
+    padding-right: 36px;
+}
+.mfp-image-holder .mfp-content {
+    max-width: 100%;
+}
+.mfp-gallery .mfp-image-holder .mfp-figure {
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+    .mfp-img-mobile .mfp-image-holder {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mfp-img-mobile img.mfp-img {
+        padding: 0;
+    }
+    .mfp-img-mobile .mfp-figure:after {
+        top: 0;
+        bottom: 0;
+    }
+    .mfp-img-mobile .mfp-figure small {
+        display: inline;
+        margin-left: 5px;
+    }
+    .mfp-img-mobile .mfp-bottom-bar {
+        background: rgba(0, 0, 0, 0.6);
+        bottom: 0;
+        margin: 0;
+        top: auto;
+        padding: 3px 5px;
+        position: fixed;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    .mfp-img-mobile .mfp-bottom-bar:empty {
+        padding: 0;
+    }
+    .mfp-img-mobile .mfp-counter {
+        right: 5px;
+        top: 3px;
+    }
+    .mfp-img-mobile .mfp-close {
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        text-align: center;
+        padding: 0;
+    }
+}
+@media all and (max-width: 900px) {
+    .mfp-arrow {
+        -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75);
+    }
+    .mfp-arrow-left {
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    }
+    .mfp-arrow-right {
+        -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+            transform-origin: 100%;
+    }
+    .mfp-container {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}

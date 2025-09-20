@@ -1,0 +1,15 @@
+{
+  "require": {
+    "mailgun/mailgun-php": "^3.5",
+    "php-http/guzzle6-adapter": "^2.0",
+    "http-interop/http-factory-guzzle": "^1.2"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
