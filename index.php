@@ -74,6 +74,8 @@
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <form id="myform" method="POST" class="myform" action=""> 
+                        <!-- Honeypot field (hidden from real users) -->
+                        <input type="text" name="username" id="username" style="display:none;" autocomplete="off">
                         <p class="text-white output_message">Service Request</p>
                         <div class="form-group">
                             <input type="text" name="name" class="form-control form-control-lg" id="name" aria-describedby="name" placeholder="Name" required>

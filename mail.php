@@ -9,24 +9,69 @@ use Mailgun\Mailgun;
 $apiKey = MAILGUN_API_KEY;
 $domain  = 'rescuemyappliances.com'; // your verified Mailgun domain
 $from    = 'Rescue My Appliances <fixit@rescuemyappliances.com>';
-$company = 'fixit@rescuemyappliances.com'; // your internal notification inbox
+$company = 'fixit@rescuemyappliances.com'; // internal email for notifications
 
-// === COLLECT FORM DATA ===
-// Use ternary operators instead of ?? for PHP 7.0 support
-$name      = isset($_POST['name'])      ? $_POST['name']      : '';
-$email     = isset($_POST['email'])     ? $_POST['email']     : '';
-$phone     = isset($_POST['phone'])     ? $_POST['phone']     : '';
-$address   = isset($_POST['address'])   ? $_POST['address']   : '';
-$appliance = isset($_POST['appliance']) ? $_POST['appliance'] : '';
-$problem   = isset($_POST['problem'])   ? $_POST['problem']   : '';
+// =======================================================
+// 1️⃣ BASIC ANTI-SPAM HONEYPOT CHECK
+if (!empty($_POST['username'])) {
+    // Hidden field that real users never fill
+    http_response_code(403);
+    file_put_contents(__DIR__ . '/spam_log.txt', date('Y-m-d H:i:s') . ' - ' . $_SERVER['REMOTE_ADDR'] . "\n", FILE_APPEND);
+    exit('Spam detected.');
+}
 
-// === BUILD EMAIL CONTENTS ===
+// =======================================================
+// 2️⃣ SANITIZE AND RETRIEVE FORM DATA
+$name      = trim($_POST['name'] ?? '');
+$email     = trim($_POST['email'] ?? '');
+$phone     = trim($_POST['phone'] ?? '');
+$address   = trim($_POST['address'] ?? '');
+$appliance = trim($_POST['appliance'] ?? '');
+$problem   = trim($_POST['problem'] ?? '');
+
+// =======================================================
+// 3️⃣ VALIDATION RULES
+
+// Required fields check
+// if (empty($name) || empty($email) || empty($phone) || empty($problem)) {
+//     http_response_code(400);
+//     exit('Please fill in all required fields.');
+// }
+
+// Validate email
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    exit('Invalid email format.');
+}
+
+// Validate name (letters, spaces, apostrophes, hyphens)
+if (!preg_match("/^[a-zA-Z\s'\-]+$/", $name)) {
+    http_response_code(400);
+    exit('Invalid name format.');
+}
+
+// ✅ Looser phone validation — only checks allowed characters, not length
+// if (!preg_match("/^[0-9\-\+\(\)\s]+$/", $phone)) {
+//     http_response_code(400);
+//     exit('Invalid phone number format.');
+
+// Optional: block disposable email domains
+$blockedDomains = ['tempmail.com', 'mailinator.com', 'guerrillamail.com', '10minutemail.com'];
+foreach ($blockedDomains as $domainBlocked) {
+    if (str_ends_with(strtolower($email), $domainBlocked)) {
+        http_response_code(403);
+        exit('Temporary email addresses are not accepted.');
+    }
+}
+
+// =======================================================
+// 4️⃣ GENERATE EMAIL CONTENT USING EXISTING TEMPLATES
 $customerEmailContent = getCustomerEmailContent($name, $email, $phone, $address, $appliance, $problem);
 $servicerEmailContent = getServicerEmailContent($name, $email, $phone, $address, $appliance, $problem);
 
-// === SEND VIA MAILGUN (SDK v3.x syntax) ===
+// =======================================================
+// 5️⃣ SEND EMAILS VIA MAILGUN
 try {
-    // Create Mailgun client with API key
     $mg = Mailgun::create($apiKey);
 
     // Send confirmation to customer
@@ -50,5 +95,7 @@ try {
     echo 'true';
 } catch (\Exception $e) {
     error_log('Mailgun error: ' . $e->getMessage());
+    http_response_code(500);
     echo 'false';
 }
+?>

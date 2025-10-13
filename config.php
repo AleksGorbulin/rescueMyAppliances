@@ -1,7 +1,7 @@
 <?php
 // Company info
 define('COMPANY_NAME','Rescue My Appliances');
-define('COMPANY_PHONE','(619)-888-6420');
+define('COMPANY_PHONE','(858)-879-3344');
 define('COMPANY_WEBSITE','www.RescueMyAppliances.com');
 define('COMPANY_EMAIL','RescueMyAppliancesDispatch@gmail.com'); // also used as SMTP username in example
 
