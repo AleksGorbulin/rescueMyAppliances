@@ -363,13 +363,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" ></script>
         <script src="js/scripts.js" ></script>
 <!-- ✅ Google reCAPTCHA v3 -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LcLKvArAAAAABZ6GgqEtZB7UQy7dn7xm-AALfXJ"></script>
+<?php require_once __DIR__ . '/config.local.php'; ?>
+<script src="https://www.google.com/recaptcha/api.js?render=<?php echo RECAPTCHA_SITE_KEY; ?>"></script>
 
 <script>
 grecaptcha.ready(function() {
+  const siteKey = '<?php echo RECAPTCHA_SITE_KEY; ?>';
   document.getElementById('myform').addEventListener('submit', function(e) {
     e.preventDefault();
-    grecaptcha.execute('6LcLKvArAAAAABZ6GgqEtZB7UQy7dn7xm-AALfXJ', {action: 'submit'}).then(function(token) {
+    grecaptcha.execute(siteKey, {action: 'submit'}).then(function(token) {
       const form = e.target;
       const input = document.createElement('input');
       input.type = 'hidden';
