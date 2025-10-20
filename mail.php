@@ -20,6 +20,29 @@ if (!empty($_POST['username'])) {
     exit('Spam detected.');
 }
 
+
+// =======================================================
+// 2️⃣ GOOGLE reCAPTCHA v3 VERIFICATION
+$recaptchaSecret = '6LcLKvArAAAAAGq6dbD7mzLYDtMFyxTCkLl0XpvU';  // <-- replace this with your real secret key
+$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+if (!$recaptchaResponse) {
+    http_response_code(403);
+    exit('Missing reCAPTCHA.');
+}
+
+$verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret="
+    . $recaptchaSecret . "&response=" . $recaptchaResponse . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
+$responseData = json_decode($verify);
+
+if (!$responseData->success || ($responseData->score ?? 0) < 0.5) {
+    http_response_code(403);
+    file_put_contents(__DIR__ . '/spam_log.txt',
+        date('Y-m-d H:i:s') . " - reCAPTCHA failed (score: " . ($responseData->score ?? 'N/A') . ") from " . $_SERVER['REMOTE_ADDR'] . "\n",
+        FILE_APPEND);
+    exit('Spam detected (reCAPTCHA).');
+}
+
 // =======================================================
 // 2️⃣ SANITIZE AND RETRIEVE FORM DATA
 $name      = trim($_POST['name'] ?? '');
