@@ -23,7 +23,7 @@ if (!empty($_POST['username'])) {
 
 // =======================================================
 // 2️⃣ GOOGLE reCAPTCHA v3 VERIFICATION
-$recaptchaSecret = '6LcLKvArAAAAAGq6dbD7mzLYDtMFyxTCkLl0XpvU';  // <-- replace this with your real secret key
+$recaptchaSecret = RECAPTCHA_SECRET_KEY;  // <-- replace this with your real secret key
 $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
 if (!$recaptchaResponse) {
