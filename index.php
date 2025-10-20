@@ -362,48 +362,46 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" ></script>
         <script src="js/scripts.js" ></script>
-        <script>
-    // reset form
-          // send email
-          $(document).ready(function() {
-    // Initialize the alert message
-    var $msg = 'Please call us at 858-879-3344';
+<!-- ✅ Google reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LcLKvArAAAAABZ6GgqEtZB7UQy7dn7xm-AALfXJ"></script>
 
-    $('.myform').on('submit', function() {
-        // Add text 'loading...' right after clicking on the submit button.
-        // $('.output_message').text('Loading...');
+<script>
+grecaptcha.ready(function() {
+  document.getElementById('myform').addEventListener('submit', function(e) {
+    e.preventDefault();
+    grecaptcha.execute('6LcLKvArAAAAABZ6GgqEtZB7UQy7dn7xm-AALfXJ', {action: 'submit'}).then(function(token) {
+      const form = e.target;
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = 'g-recaptcha-response';
+      input.value = token;
+      form.appendChild(input);
 
-        var form = $(this);
-        $.ajax({
-            url: "./mail.php",
-            method: form.attr('method'),
-            data: form.serialize(),
-            success: function(result) {
-                // alert(result);
-                console.log(result === "1");
-                if (result === "true") { // Check for a specific success indicator from mail.php
-                    $msg = 'Your request has been sent! We will contact you shortly.';
-                    $('#alert').removeClass('alert-danger');
-                } else {
-                    $msg = 'Something went wrong. Please call us at 858-879-3344.';
-                    $('#alert').addClass('alert-danger');
-                }
-                $("#alert").html($msg).show().delay(5000).fadeOut();
-                $('#myform')[0].reset();
-            },
-            error: function() {
-                $msg = 'Something went wrong. Please call us at 858-879-3344.';
-                $('#alert').addClass('alert-danger');
-                $("#alert").html($msg).show().delay(5000).fadeOut();
-            }
-        });
-
-        // Prevents default submission of the form after clicking on the submit button.
-        return false;
+      // Send via AJAX
+      $.ajax({
+        url: "./mail.php",
+        method: form.method,
+        data: $(form).serialize(),
+        success: function(result) {
+          let msg = '';
+          if (result === "true") {
+            msg = 'Your request has been sent! We will contact you shortly.';
+            $('#alert').removeClass('alert-danger');
+          } else {
+            msg = 'Something went wrong. Please call us at 858-879-3344.';
+            $('#alert').addClass('alert-danger');
+          }
+          $("#alert").html(msg).show().delay(5000).fadeOut();
+          form.reset();
+        },
+        error: function() {
+          $("#alert").html('Something went wrong. Please call us at 858-879-3344.')
+            .addClass('alert-danger').show().delay(5000).fadeOut();
+        }
+      });
     });
+  });
 });
-
-
-    </script>
+</script>
     </body>
 </html>
