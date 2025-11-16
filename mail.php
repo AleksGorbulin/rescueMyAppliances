@@ -45,10 +45,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Validate name (letters, spaces, apostrophes, hyphens)
-if (!preg_match("/^[a-zA-Z\s'\-]+$/", $name)) {
-    http_response_code(400);
-    exit('Invalid name format.');
-}
+// if (!preg_match("/^[a-zA-Z\s'\-]+$/", $name)) {
+//     http_response_code(400);
+//     exit('Invalid name format.');
+// }
 
 // ✅ Looser phone validation — only checks allowed characters, not length
 // if (!preg_match("/^[0-9\-\+\(\)\s]+$/", $phone)) {
